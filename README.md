@@ -27,17 +27,25 @@ LIBRARIES USED
 
 
 For this model we used a pre-trained classifier and CNN.
-The Haar feature-based Cascade classifier is a pre trained classifier for OpenCV. The CNN and neural network are also pre-trained networks. There are 3 different implementations of the model in this project depending on the type of input dataset.
+The Haar feature-based Cascade classifier is a pre trained classifier for OpenCV. 
+The CNN and neural network are also pre-trained networks. There are 3 different implementations of the model in this project depending on the type of input dataset.
 
 The 3 input datasets are:
+
 •	Laptop Webcam input
+
 •	MUCT Database:    3755 male and female faces with 76 manual landmarks. The database is augmented with variance of lighting, age, and ethnicity. https://github.com/StephenMilborrow/muct
+
 •	Youtube video: “SharpView CCTV in Shopping Mall”   url: https://www.youtube.com/watch?v=SvldnZ6qMGU
+
 
 
 BASIC WORKING OF THE MODEL
 
-This model can be configured to derive input from either the webcam of the user or by directly providing test images/videos. The imported cv2 library performs multiple functionalities like pre-processing and output visualization tools.                                                                                                                   The Haar cascade takes the pre-processed input image and passes it through its classifier. First through the Facial classifier and after determining Region of Interest, the Eye classifier. After procuring the frame of the ROI the initial bounding box is placed using the coordinates received from the classifier.     The frame of the ROI is then passed to the gender CNN network which then provides a prediction of the gender of the subject and the age CNN network which then provides a prediction of the range of the age of the subject. The prediction is then visualized over the bounding box of the detection.
+This model can be configured to derive input from either the webcam of the user or by directly providing test images/videos. The imported cv2 library performs multiple functionalities like pre-processing and output visualization tools.                                                                                                            
+The Haar cascade takes the pre-processed input image and passes it through its classifier. First through the Facial classifier and after determining Region of Interest, the Eye classifier. 
+After procuring the frame of the ROI the initial bounding box is placed using the coordinates received from the classifier.     
+The frame of the ROI is then passed to the gender CNN network which then provides a prediction of the gender of the subject and the age CNN network which then provides a prediction of the range of the age of the subject. The prediction is then visualized over the bounding box of the detection.
 
 
 
@@ -61,7 +69,10 @@ gender_net.caffemodel
 url: https://github.com/GilLevi/AgeGenderDeepLearning/raw/master/models/gender_net.caffemodel
 
 Keep all of these files in your execution environment,
+
 and simply exceute the pythong script!
+
 Happy Learning!
+
 
 
