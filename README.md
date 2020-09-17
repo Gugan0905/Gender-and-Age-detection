@@ -5,16 +5,26 @@ Project to detect Gender and Age from webcam, youtube video, and image stills
 A simple implementation of an Object detection model that can recognize human facial features and based on the same features, predict the gender and age of the subject. The facial detection is based on a Cascade classifier. The gender and age detector is made with a CNN architecture. In this project we test the detector for three different input scenarios, Webcam, input image, and youtube CCTV footage. All 3 models can be made with slight variations to a base code.
 
 ENVIRONMENT USED
+
 •	Spyder Python IDE (Python 3.7)
+
 •	Anaconda environment
+
 •	No GPU, Cuda
+
 •	CPU computation only
 
+
 LIBRARIES USED
+
 •	OpenCV (cv2)
+
 •	Matplotlib
+
 •	Pafy
+
 •	Youtube-dl
+
 
 For this model we used a pre-trained classifier and CNN.
 The Haar feature-based Cascade classifier is a pre trained classifier for OpenCV. The CNN and neural network are also pre-trained networks. There are 3 different implementations of the model in this project depending on the type of input dataset.
